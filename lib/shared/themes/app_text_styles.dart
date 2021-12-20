@@ -20,7 +20,7 @@ class AppTextStyles {
   );
   static final buttonMenu = GoogleFonts.inter(
     fontSize: 16,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w600,
     color: AppColors.body,
   );
   static final subtitle = GoogleFonts.lexendDeca(

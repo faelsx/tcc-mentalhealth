@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mentalhealth_app/modules/infomenu/infomenu_page.dart';
 import 'package:mentalhealth_app/modules/menu/menu_page.dart';
 import 'package:mentalhealth_app/modules/splash/splash_page.dart';
 import 'package:mentalhealth_app/shared/themes/app_colors.dart';
@@ -13,7 +14,7 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       title: 'TCC - nome',
       theme: ThemeData(primaryColor: AppColors.primary),
-      home: MenuPage(),
+      home: InfomenuPage(),
     );
   }
 }
