@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:mentalhealth_app/shared/themes/app_colors.dart';
 import 'package:mentalhealth_app/shared/themes/app_images.dart';
 import 'package:mentalhealth_app/shared/themes/app_text_styles.dart';
-import 'package:mentalhealth_app/shared/themes/widgets/menubar/menu_bar.dart';
-import 'package:mentalhealth_app/shared/themes/widgets/menubar/menu_button.dart';
+import 'package:mentalhealth_app/shared/themes/widgets/menu/menu_bar.dart';
+import 'package:mentalhealth_app/shared/themes/widgets/menu/menu_button.dart';
 
-class MenuPage extends StatelessWidget {
-  const MenuPage({Key? key}) : super(key: key);
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +15,7 @@ class MenuPage extends StatelessWidget {
         backgroundColor: AppColors.background,
         body: Column(
           children: [
-            MenuBar(
-              onTap: () => {print("clicou voltar")},
-            ),
+            MenuBar(),
             Padding(
               padding: const EdgeInsets.only(top: 29, bottom: 47),
               child: Text(
@@ -30,7 +28,7 @@ class MenuPage extends StatelessWidget {
               child: MenuButton(
                   text: "Biblioteca de informações",
                   icon: AppImages.book,
-                  onTap: () => {print("cliqueibotao")}),
+                  onTap: () => {Navigator.pushNamed(context, "/infomenu")}),
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 50),

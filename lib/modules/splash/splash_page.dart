@@ -3,8 +3,22 @@ import 'package:mentalhealth_app/shared/themes/app_colors.dart';
 import 'package:mentalhealth_app/shared/themes/app_images.dart';
 import 'package:mentalhealth_app/shared/themes/app_text_styles.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
+
+  @override
+  State<SplashPage> createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+  @override
+  void initState() {
+    super.initState();
+    new Future.delayed(
+      const Duration(seconds: 3),
+      () => Navigator.pushReplacementNamed(context, "/home"),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
