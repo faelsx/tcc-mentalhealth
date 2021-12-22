@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
               child: MenuButton(
                   text: "Contatos de apoio",
                   icon: AppImages.user,
-                  onTap: () => {print("cliqueibotao")}),
+                  onTap: () => {Navigator.pushNamed(context, "/contacts")}),
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 50),

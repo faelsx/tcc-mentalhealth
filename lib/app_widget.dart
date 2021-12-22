@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mentalhealth_app/modules/contacts/contacts_page.dart';
 import 'package:mentalhealth_app/modules/info/tdah_page.dart';
 import 'package:mentalhealth_app/modules/splash/splash_page.dart';
 import 'package:mentalhealth_app/shared/themes/app_colors.dart';
@@ -16,6 +17,7 @@ class AppWidget extends StatelessWidget {
         "/splash": (context) => SplashPage(),
         "/home": (context) => HomePage(),
         "/infomenu": (context) => InfomenuPage(),
+        "/contacts": (context) => ContactsPage(),
         "/tdah": (context) => TDAHPage(),
       },
       initialRoute: "/splash",
