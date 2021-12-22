@@ -8,28 +8,32 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.background,
-      body: Center(
-        child: Container(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(bottom: 30),
-                child: Image.asset(
-                  AppImages.logo,
-                  height: 180,
-                  width: 180,
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: AppColors.background,
+        body: Center(
+          child: Container(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 30),
+                  child: Image.asset(
+                    AppImages.logo,
+                    height: 180,
+                    width: 180,
+                  ),
                 ),
-              ),
-              Text(
-                "Seja bem vindo",
-                style: AppTextStyles.titleHome,
-              ),
-              Text("Se informe. Se cuide.", style: AppTextStyles.subtitleHome),
-              Text("Você não está sozinho.", style: AppTextStyles.subtitleHome)
-            ],
+                Text(
+                  "Seja bem vindo",
+                  style: AppTextStyles.titleHome,
+                ),
+                Text("Se informe. Se cuide.",
+                    style: AppTextStyles.subtitleHome),
+                Text("Você não está sozinho.",
+                    style: AppTextStyles.subtitleHome)
+              ],
+            ),
           ),
         ),
       ),

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "164903960808",
+    "project_id": "tcc-mentalhealth",
+    "storage_bucket": "tcc-mentalhealth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164903960808:android:41743c92dab05c34fd095d",
+        "android_client_info": {
+          "package_name": "com.example.mentalhealth_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164903960808-7sc2tc2e60kif1c9n8r5lj683cijpgjr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mentalhealth_app",
+            "certificate_hash": "3dde077217c4947b5d9a3968d47dd1c41e172c38"
+          }
+        },
+        {
+          "client_id": "164903960808-sbh8qm6rin164hshuj0lfb0vmbi5r55q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzS3p_gujBQbyYUwr7z8V0KYddy_wy5sM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164903960808-sbh8qm6rin164hshuj0lfb0vmbi5r55q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,4 +7,5 @@ class AppImages {
   static const breath = "assets/images/breath.png";
   static const user = "assets/images/user.png";
   static const chat = "assets/images/chat.png";
+  static const topic = "assets/images/topic.png";
 }

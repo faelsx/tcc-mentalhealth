@@ -10,46 +10,48 @@ class MenuPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.background,
-      body: Column(
-        children: [
-          MenuBar(
-            onTap: () => {print("clicou voltar")},
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 29, bottom: 47),
-            child: Text(
-              "Menu Principal",
-              style: AppTextStyles.titleMenu,
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: AppColors.background,
+        body: Column(
+          children: [
+            MenuBar(
+              onTap: () => {print("clicou voltar")},
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 50),
-            child: MenuButton(
-                text: "Biblioteca de informações",
-                icon: AppImages.book,
+            Padding(
+              padding: const EdgeInsets.only(top: 29, bottom: 47),
+              child: Text(
+                "Menu Principal",
+                style: AppTextStyles.titleMenu,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 50),
+              child: MenuButton(
+                  text: "Biblioteca de informações",
+                  icon: AppImages.book,
+                  onTap: () => {print("cliqueibotao")}),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 50),
+              child: MenuButton(
+                  text: "Contatos de apoio",
+                  icon: AppImages.user,
+                  onTap: () => {print("cliqueibotao")}),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 50),
+              child: MenuButton(
+                  text: "Lobby de apoio",
+                  icon: AppImages.chat,
+                  onTap: () => {print("cliqueibotao")}),
+            ),
+            MenuButton(
+                text: "Métodos de Respiração",
+                icon: AppImages.breath,
                 onTap: () => {print("cliqueibotao")}),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 50),
-            child: MenuButton(
-                text: "Contatos de apoio",
-                icon: AppImages.user,
-                onTap: () => {print("cliqueibotao")}),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 50),
-            child: MenuButton(
-                text: "Lobby de apoio",
-                icon: AppImages.chat,
-                onTap: () => {print("cliqueibotao")}),
-          ),
-          MenuButton(
-              text: "Métodos de Respiração",
-              icon: AppImages.breath,
-              onTap: () => {print("cliqueibotao")}),
-        ],
+          ],
+        ),
       ),
     );
   }
