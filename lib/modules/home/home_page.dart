@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
             MenuButton(
                 text: "Métodos de Respiração",
                 icon: AppImages.breath,
-                onTap: () => {print("cliqueibotao")}),
+                onTap: () => {Navigator.pushNamed(context, "/breathhelper")}),
           ],
         ),
       ),

@@ -40,7 +40,7 @@ class TDAHPage extends StatelessWidget {
                       alignment: Alignment.topLeft,
                       child: Topic(
                         text: "O que é?",
-                        width: 0.22,
+                        width: 110,
                       ),
                     ),
                   ),
@@ -59,7 +59,7 @@ class TDAHPage extends StatelessWidget {
                       alignment: Alignment.topLeft,
                       child: Topic(
                         text: "Principais Sintomas",
-                        width: 0.39,
+                        width: 190,
                       ),
                     ),
                   ),
@@ -78,7 +78,7 @@ class TDAHPage extends StatelessWidget {
                       alignment: Alignment.topLeft,
                       child: Topic(
                         text: "Principais Sintomas",
-                        width: 0.39,
+                        width: 190,
                       ),
                     ),
                   ),
