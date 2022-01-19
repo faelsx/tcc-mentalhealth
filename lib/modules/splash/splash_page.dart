@@ -1,9 +1,12 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:mentalhealth_app/shared/themes/app_colors.dart';
 import 'package:mentalhealth_app/shared/themes/app_images.dart';
 import 'package:mentalhealth_app/shared/themes/app_text_styles.dart';
 
 class SplashPage extends StatefulWidget {
+  final color = '';
   const SplashPage({Key? key}) : super(key: key);
 
   @override

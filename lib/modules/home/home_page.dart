@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:mentalhealth_app/shared/themes/app_colors.dart';
 import 'package:mentalhealth_app/shared/themes/app_images.dart';
@@ -42,7 +44,7 @@ class HomePage extends StatelessWidget {
               child: MenuButton(
                   text: "Lobby de apoio",
                   icon: AppImages.chat,
-                  onTap: () => {print("cliqueibotao")}),
+                  onTap: () => {Navigator.pushNamed(context, "/lobbyrules")}),
             ),
             MenuButton(
                 text: "Métodos de Respiração",

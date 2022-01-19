@@ -24,6 +24,7 @@ class InfomenuButton extends StatelessWidget {
           child: Text(
             text,
             style: AppTextStyles.buttonMenu,
+            textAlign: TextAlign.center,
           ),
         ),
       ),

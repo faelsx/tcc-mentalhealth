@@ -13,24 +13,29 @@ class Topic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    return Container(
-      height: size.height * 0.0531,
-      width: width.toDouble(),
-      padding: EdgeInsets.all(7),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10), color: AppColors.primary),
-      child: Row(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(right: 5),
-            child: Image.asset(AppImages.topic),
-          ),
-          Text(
-            text,
-            style: AppTextStyles.topic,
-          )
-        ],
-      ),
+    return Row(
+      children: [
+        Container(
+            constraints: BoxConstraints(maxWidth: size.width * 0.5),
+            padding: EdgeInsets.all(7),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: AppColors.primary),
+            child: IntrinsicWidth(
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 5),
+                    child: Image.asset(AppImages.topic),
+                  ),
+                  Text(
+                    text,
+                    style: AppTextStyles.topic,
+                  )
+                ],
+              ),
+            )),
+      ],
     );
   }
 }

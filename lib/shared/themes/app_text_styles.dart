@@ -23,6 +23,11 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.body,
   );
+  static final typeChat = GoogleFonts.inter(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: AppColors.body.withOpacity(0.5),
+  );
   static final subtitle = GoogleFonts.lexendDeca(
     fontSize: 14,
     fontWeight: FontWeight.w400,

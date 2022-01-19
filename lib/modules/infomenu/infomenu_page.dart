@@ -33,8 +33,8 @@ class InfomenuPage extends StatelessWidget {
                     ),
                     Expanded(child: Container()),
                     InfomenuButton(
-                      text: "Depressão",
-                      onTap: () => {print("clicou")},
+                      text: "Síndromes relacionadas ao sono",
+                      onTap: () => {Navigator.pushNamed(context, "/sono")},
                     ),
                   ],
                 ),

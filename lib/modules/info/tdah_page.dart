@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mentalhealth_app/shared/themes/app_colors.dart';
 import 'package:mentalhealth_app/shared/themes/app_text_styles.dart';
-import 'package:mentalhealth_app/shared/themes/data/tdah.dart';
+import 'package:mentalhealth_app/shared/themes/data/info/tdah.dart';
 import 'package:mentalhealth_app/shared/themes/widgets/info/topic.dart';
 import 'package:mentalhealth_app/shared/themes/widgets/menu/menu_bar.dart';
 
