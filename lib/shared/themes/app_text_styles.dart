@@ -48,4 +48,14 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
     color: AppColors.body,
   );
+  static final message = GoogleFonts.inter(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    color: AppColors.body,
+  );
+  static final messagetime = GoogleFonts.inter(
+    fontSize: 10,
+    fontWeight: FontWeight.w400,
+    color: AppColors.body,
+  );
 }

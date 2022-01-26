@@ -9,4 +9,5 @@ class AppImages {
   static const chat = "assets/images/chat.png";
   static const topic = "assets/images/topic.png";
   static const contact = "assets/images/contact.png";
+  static const call = "assets/images/call.png";
 }

@@ -16,10 +16,12 @@ class InfoContainer extends StatelessWidget {
         margin: EdgeInsets.symmetric(horizontal: 20),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-          child: Text(
-            text,
-            style: AppTextStyles.textBreath,
-            textAlign: TextAlign.justify,
+          child: Center(
+            child: Text(
+              text,
+              style: AppTextStyles.textBreath,
+              textAlign: TextAlign.justify,
+            ),
           ),
         ));
   }

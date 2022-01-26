@@ -16,7 +16,7 @@ class Topic extends StatelessWidget {
     return Row(
       children: [
         Container(
-            constraints: BoxConstraints(maxWidth: size.width * 0.5),
+            constraints: BoxConstraints(maxWidth: size.width * 0.8),
             padding: EdgeInsets.all(7),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),

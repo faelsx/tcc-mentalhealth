@@ -22,6 +22,14 @@ class MenuButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: AppColors.primary,
           borderRadius: BorderRadius.circular(10),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 4,
+              blurRadius: 6,
+              offset: Offset(0, 3), // changes position of shadow
+            ),
+          ],
         ),
         child: Row(
           children: [

@@ -7,6 +7,7 @@ import 'package:mentalhealth_app/shared/themes/widgets/lobby/message_widget.dart
 import 'package:mentalhealth_app/shared/themes/widgets/lobby/messagebar_widget.dart';
 import 'package:mentalhealth_app/shared/themes/widgets/menu/menu_bar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:intl/intl.dart';
 
 class LobbyPage extends StatefulWidget {
   const LobbyPage({Key? key}) : super(key: key);
@@ -28,7 +29,6 @@ class _LobbyPageState extends State<LobbyPage> {
 
   @override
   Widget build(BuildContext context) {
-    final color = getRandomColor();
     final size = MediaQuery.of(context).size;
     return SafeArea(
         child: Scaffold(
@@ -78,10 +78,18 @@ class _LobbyPageState extends State<LobbyPage> {
                                 reverse: true,
                                 itemCount: data.size,
                                 itemBuilder: (context, index) {
+                                  final timestamp = data.docs[index]['sendAt'];
+                                  final DateTime dateTime = timestamp.toDate();
+                                  final dateString =
+                                      DateFormat('H:mm').format(dateTime);
+                                  final dateStr =
+                                      DateFormat('d/M').format(dateTime);
                                   return MessageWidget(
                                     message: data.docs[index]['message'],
                                     color: data.docs[index]['colorUser'],
                                     currentColor: color,
+                                    timestamp: dateString,
+                                    date: dateStr,
                                   );
                                 },
                               );

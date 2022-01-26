@@ -25,23 +25,33 @@ class BreathhelperPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(bottom: 50),
               child: BreathButton(
+                text: "Respiração Diafragmática",
+                onTap: () =>
+                    {Navigator.pushNamed(context, "/respiracaodiafragmatica")},
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 50),
+              child: BreathButton(
+                text: "Relaxamento Progressivo",
+                onTap: () =>
+                    {Navigator.pushNamed(context, "/relaxamentoprogressivo")},
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 50),
+              child: BreathButton(
+                text: "Respiração Quadrada",
+                onTap: () =>
+                    {Navigator.pushNamed(context, "/respiracaoquadrada")},
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 50),
+              child: BreathButton(
                 text: "Expiração Alongada",
                 onTap: () =>
                     {Navigator.pushNamed(context, "/expiracaoalongada")},
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 50),
-              child: BreathButton(
-                text: "Quadrada",
-                onTap: () => {},
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 50),
-              child: BreathButton(
-                text: "Diafragmática",
-                onTap: () => {},
               ),
             ),
           ],

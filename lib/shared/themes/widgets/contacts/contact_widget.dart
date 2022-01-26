@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:mentalhealth_app/shared/themes/app_colors.dart';
 import 'package:mentalhealth_app/shared/themes/app_text_styles.dart';
-
-import '../../app_images.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactWidget extends StatefulWidget {
   final title;
   final number;
   final subscription;
   final heigth;
-  const ContactWidget(
-      {Key? key,
-      required this.title,
-      required this.number,
-      required this.subscription,
-      required this.heigth})
-      : super(key: key);
+  const ContactWidget({
+    Key? key,
+    required this.title,
+    required this.number,
+    required this.subscription,
+    required this.heigth,
+  }) : super(key: key);
 
   @override
   _ContactWidgetState createState() => _ContactWidgetState();
@@ -47,12 +46,26 @@ class _ContactWidgetState extends State<ContactWidget> {
                         style: AppTextStyles.buttonMenu,
                       ),
                       Expanded(child: Container()),
-                      Image.asset(AppImages.contact),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 3),
-                        child: Text(
-                          widget.number,
-                          style: AppTextStyles.buttonMenu,
+                      InkWell(
+                        onTap: () => {launch("tel:${widget.number}")},
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: AppColors.secundary,
+                              borderRadius: BorderRadius.circular(10)),
+                          padding:
+                              EdgeInsets.symmetric(vertical: 2, horizontal: 5),
+                          child: Row(
+                            children: [
+                              Icon(Icons.call),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 3),
+                                child: Text(
+                                  widget.number,
+                                  style: AppTextStyles.buttonMenu,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
@@ -106,7 +119,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                         style: AppTextStyles.buttonMenu,
                       ),
                       Expanded(child: Container()),
-                      Image.asset(AppImages.contact),
+                      Icon(Icons.perm_contact_cal),
                       Padding(
                         padding: const EdgeInsets.only(left: 3),
                         child: Text(

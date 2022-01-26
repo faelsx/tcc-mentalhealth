@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:mentalhealth_app/shared/themes/app_colors.dart';
 import 'package:mentalhealth_app/shared/themes/app_images.dart';
@@ -42,14 +40,14 @@ class HomePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(bottom: 50),
               child: MenuButton(
-                  text: "Lobby de apoio",
-                  icon: AppImages.chat,
-                  onTap: () => {Navigator.pushNamed(context, "/lobbyrules")}),
+                  text: "Métodos de Respiração",
+                  icon: AppImages.breath,
+                  onTap: () => {Navigator.pushNamed(context, "/breathhelper")}),
             ),
             MenuButton(
-                text: "Métodos de Respiração",
-                icon: AppImages.breath,
-                onTap: () => {Navigator.pushNamed(context, "/breathhelper")}),
+                text: "Lobby de apoio",
+                icon: AppImages.chat,
+                onTap: () => {Navigator.pushNamed(context, "/lobbyrules")}),
           ],
         ),
       ),

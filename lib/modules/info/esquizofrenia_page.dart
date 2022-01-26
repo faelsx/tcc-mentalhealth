@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:mentalhealth_app/shared/themes/app_colors.dart';
 import 'package:mentalhealth_app/shared/themes/app_text_styles.dart';
-import 'package:mentalhealth_app/shared/themes/data/info/tdah.dart';
+import 'package:mentalhealth_app/shared/themes/data/info/esquizofrenia.dart';
 import 'package:mentalhealth_app/shared/themes/widgets/info/topic.dart';
 import 'package:mentalhealth_app/shared/themes/widgets/menu/menu_bar.dart';
 
-class TDAHPage extends StatelessWidget {
-  const TDAHPage({Key? key}) : super(key: key);
+class EsquizofreniaPage extends StatelessWidget {
+  const EsquizofreniaPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,11 +21,11 @@ class TDAHPage extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    TDAH.title,
+                    Esquizofrenia.title,
                     style: AppTextStyles.titleMenu,
                   ),
                   Text(
-                    TDAH.subtitle,
+                    Esquizofrenia.subtitle,
                     style: AppTextStyles.subtitle,
                   )
                 ],
@@ -39,7 +39,7 @@ class TDAHPage extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Topic(
-                        text: "O que é?",
+                        text: "Conceito",
                         width: 110,
                       ),
                     ),
@@ -48,7 +48,7 @@ class TDAHPage extends StatelessWidget {
                     padding: const EdgeInsets.only(
                         left: 50, right: 50, top: 10, bottom: 50),
                     child: Text(
-                      TDAH.oquee,
+                      Esquizofrenia.conceito,
                       style: AppTextStyles.bodytext,
                       textAlign: TextAlign.justify,
                     ),
@@ -58,7 +58,7 @@ class TDAHPage extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Topic(
-                        text: "Principais Sintomas",
+                        text: "Sintomas Negativos",
                         width: 190,
                       ),
                     ),
@@ -67,7 +67,7 @@ class TDAHPage extends StatelessWidget {
                     padding: const EdgeInsets.only(
                         left: 50, right: 50, top: 10, bottom: 50),
                     child: Text(
-                      TDAH.oquee,
+                      Esquizofrenia.sintomasnegativos,
                       style: AppTextStyles.bodytext,
                       textAlign: TextAlign.justify,
                     ),
@@ -77,7 +77,7 @@ class TDAHPage extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Topic(
-                        text: "Principais Sintomas",
+                        text: "Sintomas Negativos",
                         width: 190,
                       ),
                     ),
@@ -86,7 +86,7 @@ class TDAHPage extends StatelessWidget {
                     padding: const EdgeInsets.only(
                         left: 50, right: 50, top: 10, bottom: 50),
                     child: Text(
-                      TDAH.oquee,
+                      Esquizofrenia.sintomaspositivos,
                       style: AppTextStyles.bodytext,
                       textAlign: TextAlign.justify,
                     ),

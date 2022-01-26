@@ -28,8 +28,45 @@ class InfomenuPage extends StatelessWidget {
                 child: Row(
                   children: [
                     InfomenuButton(
-                      text: "TDAH",
-                      onTap: () => {Navigator.pushNamed(context, "/tdah")},
+                      text: "Transtornos neurocognitivos",
+                      onTap: () =>
+                          {Navigator.pushNamed(context, "/transtornosneuro")},
+                    ),
+                    Expanded(child: Container()),
+                    InfomenuButton(
+                      text: "Transtorno de Ansiedade Generalizada",
+                      onTap: () => {
+                        Navigator.pushNamed(context, "/transtornoansiedade")
+                      },
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 28, right: 28, bottom: 40),
+                child: Row(
+                  children: [
+                    InfomenuButton(
+                      text: "Demências",
+                      onTap: () => {Navigator.pushNamed(context, "/demencias")},
+                    ),
+                    Expanded(child: Container()),
+                    InfomenuButton(
+                      text: "Síndromes Depressivas",
+                      onTap: () =>
+                          {Navigator.pushNamed(context, "/sindromesdepre")},
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 28, right: 28, bottom: 40),
+                child: Row(
+                  children: [
+                    InfomenuButton(
+                      text: "Síndromes Maníacas",
+                      onTap: () =>
+                          {Navigator.pushNamed(context, "/sindromesmani")},
                     ),
                     Expanded(child: Container()),
                     InfomenuButton(
@@ -44,13 +81,15 @@ class InfomenuPage extends StatelessWidget {
                 child: Row(
                   children: [
                     InfomenuButton(
-                      text: "TDAH",
-                      onTap: () => {print("clicou")},
+                      text: "Esquizofrenia",
+                      onTap: () =>
+                          {Navigator.pushNamed(context, "/esquizofrenia")},
                     ),
                     Expanded(child: Container()),
                     InfomenuButton(
-                      text: "Depressão",
-                      onTap: () => {print("clicou")},
+                      text: "Síndromes Psicomotoras",
+                      onTap: () =>
+                          {Navigator.pushNamed(context, "/sindromespsicomo")},
                     ),
                   ],
                 ),
@@ -60,13 +99,13 @@ class InfomenuPage extends StatelessWidget {
                 child: Row(
                   children: [
                     InfomenuButton(
-                      text: "TDAH",
-                      onTap: () => {print("clicou")},
+                      text: "Catatonia e lentificação psicomotora.",
+                      onTap: () => {Navigator.pushNamed(context, "/catatonia")},
                     ),
                     Expanded(child: Container()),
                     InfomenuButton(
-                      text: "Depressão",
-                      onTap: () => {print("clicou")},
+                      text: "Anorexia",
+                      onTap: () => {Navigator.pushNamed(context, "/anorexia")},
                     ),
                   ],
                 ),
@@ -76,29 +115,14 @@ class InfomenuPage extends StatelessWidget {
                 child: Row(
                   children: [
                     InfomenuButton(
-                      text: "TDAH",
-                      onTap: () => {print("clicou")},
+                      text: "Bulimia",
+                      onTap: () => {Navigator.pushNamed(context, "/bulimia")},
                     ),
                     Expanded(child: Container()),
                     InfomenuButton(
-                      text: "Depressão",
-                      onTap: () => {print("clicou")},
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 28, right: 28, bottom: 40),
-                child: Row(
-                  children: [
-                    InfomenuButton(
-                      text: "TDAH",
-                      onTap: () => {print("clicou")},
-                    ),
-                    Expanded(child: Container()),
-                    InfomenuButton(
-                      text: "Depressão",
-                      onTap: () => {print("clicou")},
+                      text: "Transtornos consequêntes do uso de substâncias",
+                      onTap: () =>
+                          {Navigator.pushNamed(context, "/substancias")},
                     ),
                   ],
                 ),
