@@ -1,16 +1,7 @@
-# mentalhealth_app
+# BreathIn 
 
-A new Flutter project.
 
-## Getting Started
+Android app built in Flutter for an end-of-course project.
 
-This project is a starting point for a Flutter application.
+The main reason beyound this app is to share information about the mental illnes theme. The app also features a live chat with the porpose to be a safe spot to share your experiences about mental illnes.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
